@@ -12,9 +12,9 @@ public class Bob {
         }else if (userSentence.endsWith(exclamation)) {
             System.out.println("Whoa, chill out!");
         }else if (userSentence.equals("")){
-            System.out.println("Whatever.");
+            System.out.println("Fine. Be that way!");
         }else{
-            System.out.println("Sure.");
+            System.out.println("Whatever.");
         }
         //System.out.println(userSentence);
     }
