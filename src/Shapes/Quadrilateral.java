@@ -4,8 +4,12 @@ public abstract class Quadrilateral extends Shape implements Measurable {
     protected double length;
     protected double width;
 
+//public Quadrilateral(){}
 
-
+    public Quadrilateral(double length, double width){
+    this.length = length;
+    this.width = width;
+}
 
     @Override
     public double getPerimeter() {
@@ -17,6 +21,14 @@ public abstract class Quadrilateral extends Shape implements Measurable {
         return length * width;
     }
 
+
+
+
+
+    public abstract double getPerimeter(double l, double w);
+
+    public abstract double getArea(double l, double w);
+
     //    public double getLength() {
 //        return length;
 //    }
@@ -24,13 +36,4 @@ public abstract class Quadrilateral extends Shape implements Measurable {
 //    public double getWidth() {
 //        return width;
 //    }
-
-    public Quadrilateral(double length, double width){
-        this.length = length;
-        this.width = width;
-    }
-
-    public abstract double getPerimeter(double l, double w);
-
-    public abstract double getArea(double l, double w);
 }

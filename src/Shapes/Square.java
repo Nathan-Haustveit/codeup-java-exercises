@@ -5,6 +5,11 @@ public class Square extends Quadrilateral implements Measurable {
         super(side, side);
     }
 
+    public double getPerimeter() {
+        double side = super.length;
+        return 4 * side;
+    }
+
     public double getArea() {
         double side = super.length;
         return side * side;
@@ -20,10 +25,6 @@ public class Square extends Quadrilateral implements Measurable {
         return 0;
     }
 
-    public double getPerimeter() {
-        double side = super.length;
-        return 4 * side;
-    }
 
 
 
